@@ -1,0 +1,33 @@
+* {
+  -webkit-tap-highlight-color: transparent; /* убирает голубой "blink" при нажатии */
+}
+
+.todoFormContainer {
+  margin-bottom: 30px;
+}
+
+.todoFormContainer form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todoFormContainer input {
+  width: 45%;
+  height: 30px;
+  font-size: 1.3rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(235, 235, 235);
+}
+
+.todoFormContainer input:focus,
+.todoFormContainer textarea:focus,
+.todoFormContainer select:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(255, 143, 163, 0.4); /* твой розовый glow */
+  border-color: #ff8fa3; /* нежный розовый акцент */
+  -webkit-tap-highlight-color: transparent;
+  color: #444444;
+}
